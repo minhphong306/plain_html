@@ -21,38 +21,60 @@
 			<h3 class="top text-center">An ninh mạng</h3>
 
 
-			<div class="panel panel-primary">
+			<div class="panel panel-primary" id="menu">
 				<div class="panel-heading">Mục lục</div>
 				<div class="panel-body">
 					<table class="table table-hover">
 						<thead>
 							<tr>
-								<th>Nội dung</th>
-								<th>Nội dung</th>
-								<th>Nội dung</th>
+								<th>Câu</th>
 								<th>Nội dung</th>
 							</tr>
 						</thead>
 
 						<tbody>
 							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><a href="#cau-2"> Câu 2 </a></td>
+								<td>Trình bày các mục tiêu của an ninh mạng? Lấy ví dụ?</td>
 							</tr>
 							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><a href="#cau-4"> Câu 4 </a></td>
+								<td>Trình bày khái niệm Firewall, cơ chế kiểm soát, ưu điểm và hạn chế?</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-6"> Câu 6 </a></td>
+								<td>Phân loại Firewall? Trình bày về cơ chế Package Filtering?</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-8"> Câu 8 </a></td>
+								<td>Nêu các hình thức tấn công? Liên hệ với các mục tiêu của an ninh mạng</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-10"> Câu 10 </a></td>
+								<td>Trình bày về các loại FireWall Topology?</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-12"> Câu 12 </a></td>
+								<td>Trình bày các bước để mã hóa theo thuật toán Ceasar Cipher? Lấy ví dụ mã hóa một chuỗi ký tự tùy chọn để minh họa.</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-14"> Câu 14 </a></td>
+								<td>Trình bày các bước để mã hóa theo thuật toán Vigenere Cipher? Lấy ví dụ mã hóa một chuỗi ký tự tùy chọn để minh họa.</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-16"> Câu 16 </a></td>
+								<td>Trình bày cách thiết lập một bộ khóa trong thuật toán RSA. Sử dụng bộ khóa đó để mã hóa và giải mã một ký tự tùy chọn</td>
+							</tr>
+							<tr>
+								<td><a href="#cau-18"> Câu 18 </a></td>
+								<td>Nêu kiến trúc các mô hình cài đặt FireWall?</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
 
-			<div class="panel panel-primary">
+			<div class="panel panel-primary" id="cau-2">
 				<div class="panel-heading">
 					<i class="glyphicon glyphicon-question-sign"></i>
 				Câu 2: Trình bày các mục tiêu của an ninh mạng? Lấy ví dụ?
@@ -75,11 +97,11 @@
 							<li><b>Authorisation (Cấp phép).</b> VD: Passwork là một kiểu cấp phép, chỉ password này mới truy cập được tài khoản này.</li>
 							<li><b>Access Control (Quyền truy cập).</b> VD: Một trang quản trị bán hàng, nhân viên A chỉ được phân quyền trên trang bán hàng là thêm, nhân viên B vừa thêm, xóa và sửa hàng.</li>
 						</ol>
-
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
 				</div>
 			</div>
 
-			<div class="panel panel-primary">
+			<div class="panel panel-primary" id="cau-4">
 				<div class="panel-heading">
 					<i class="glyphicon glyphicon-question-sign"></i>
 				Câu 4: Trình bày khái niệm firewall, cơ chế kiểm soát, ưu điểm và hạn chế?
@@ -109,6 +131,155 @@
 						<li><b>Firewall ko thể chống lại các nguy cơ tấn công từ chính bên trong mạng nội bộ mà nó bảo vệ.</b></li>
 						<li><b>Firewall ko thể bảo vệ chống lại việc chuyển các chương trình hoặc file có virus đi qua nó.</b></li>
 					</ol>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-6">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 6. Phân loại FireWall? Trình bày về cơ chế Package Filtering?
+				</div>
+				<div class="panel-body lead">
+					<p>- Phân loại FireWall</p>
+					<ol>
+						<li><b>Packet-Filtering FireWall</b></li>
+						<li><b>Circuit-Level Gateway</b></li>
+						<li><b>Application-Level Gateway</b></li>
+					</ol>
+					<p>- Cơ chế của Packet-Filtering FireWall</p>
+					<ol>
+						<li><b>Firewall sẽ áp dụng một tập các quy tắc cho mỗi gói tin IP đi đến và sau đó quyết định sẽ chuyển tiếp hay loại bỏ gói tin đó đi.</b></li>
+						<li><b>Bộ lọc packet được thiết lập bằng danh sách quy tắc dựa vào các trường header IP và TCP.</b></li>
+						<li><b>Có 2 chính sách mặc định: Discard và Forward.</b></li>
+					</ol>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-8">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 8. Nêu các hình thức tấn công? Liên hệ với các mục tiêu của an ninh mạng
+				</div>
+				<div class="panel-body lead">
+					<p>- Có 4 hình thức</p>
+					<ol>
+						<li><b>Ngắt quãng - Availability</b></li>
+						<li><b>Chặn bắt - Confidentiality</b></li>
+						<li><b>Sửa đổi - Integrity</b></li>
+						<li><b>Giả mạo - Message Origin Authentication</b></li>
+					</ol>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-10">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 10.	Trình bày về các loại FireWall Topology?
+				</div>
+				<div class="panel-body lead">
+					<p>- Có 3 loại FireWall Topology</p>
+					<ol>
+						<li><b>Perimeter: </b> đây là mô hình FireWall phổ biến nhất ,mô hình gồm 1 FireWall đặt nằm giữa các vùng mạng hoặc giữa các hệ thống tin cậy và không tin cậy.</li>
+						<li><b>Three-Legged (DMZ): </b> mô hình này thường được sử dụng khi chúng ta muốn tài nguyên  ra các hệ thống mạng bên ngoài , khu vực mạng chứa các tài nguyên này được gọi là DMZ. Cũng giống như mô hình Perimeter , mô hình này sử dụng 1  tường lửa nhưng có thêm 1 card mạng khác kết nối với DMZ. Tường lửa sẽ được cấu hình cho phép bên ngoài  truy cập đến những tài nguyên được chỉ định.</li>
+						<li><b>Chained (DMZ): </b> mô hình này sử dụng 2 tưởng lửa  để tạo DMZ nằm ở giưa hệ thống mạng nội bộ và bên ngoài. Việc cấu hình cho 2 firewal này tưởng đổi phức tạp , nhưng nếu cấu hình đúng thì mô hình tường lủa này mang lại hiệu quả rất cao. Mô hình này thường được áp dụng khi mạng nội bộ và mạng bên ngoài muốn truy cập vào DMZ, sẽ có các rule ở mỗi tường lửa cho từng truy cập từ bên ngoài và bên trong </li>
+					</ol>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-12">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 12.	Trình bày các bước để mã hóa theo thuật toán Ceasar Cipher? Lấy ví dụ mã hóa một chuỗi ký tự tùy chọn để minh họa.
+				</div>
+				<div class="panel-body lead">
+					<p>- Các bước để mã hóa thuật toán <b>Ceasar: </b></p>
+					<ol>
+						<li>Xoá tất các ký tự đặc biệt nằm ngoài bảng chữ cái (ví dụ: số, dấu chấm, dấu phẩy, dấu nháy...) và chuyển chữ hoa thành chữ thường.</li>
+						<li>Xác định 1 khoá <b>(K)</b> là một số nằm trong khoảng từ 0 đến 25</li>
+						<li>Chuyển đổi bản rõ (Plaintext) thành bản mã (Ciphertext)(Dịch chuyển chữ cái cần mã K đơn vị theo chiều kim đồng hồ)</li>
+					</ol>
+					<img src="https://ghepvantienganh.com/wp-content/uploads/2017/05/bang-chu-cai-tieng-anh-cach-doc-va-phat-am-1.jpg" alt="Ceasar">
+					<hr>
+					<p>- Ví dụ: Mã hóa chuỗi "Khoa CNTT"</p>
+					<p>Bước 1: "khoa cntt"</p>
+					<p>Bước 2: chọn K = 3</p>
+					<p>Bước 3: Ta được chuỗi sau khi mã hóa: "nkrd fqww"</p>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-14">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 14.	Trình bày các bước để mã hóa theo thuật toán Vigenere Cipher? Lấy ví dụ mã hóa một chuỗi ký tự tùy chọn để minh họa.
+				</div>
+				<div class="panel-body lead">
+					<p>- Các bước để mã hóa thuật toán <b>Vigenere: </b></p>
+					<ol>
+						<li>Xác định 1 khoá <b>(K)</b> là một từ (VD: CNTT).</li>
+						<li>Tìm thứ tự của từng ký tự trong khoá tương ứng với bảng chữ cái.</li>
+						<li>Ánh xạ bản rõ với ma trận Vigenere Square and Demonstration theo thứ tự của khoá trong bảng chữ cái được bản mã.</li>
+					</ol>
+					<img src="https://jokerdao.files.wordpress.com/2014/04/vigenere-substitution-table.gif" alt="Vigenere">
+					<hr>
+					<p>- Ví dụ: Mã hóa chuỗi "ATTACKATDAWN"</p>
+					<p>Bước 1: chọn K = LEMONLEMONLE</p>
+					<p>Bước 2: Ta được chuỗi sau khi mã hóa: "LXFOPVEFRNHR"</p>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-16">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+					Câu 16.	Trình bày cách thiết lập một bộ khóa trong thuật toán RSA. Sử dụng bộ khóa đó để mã hóa và giải mã một ký tự tùy chọn.
+				</div>
+				<div class="panel-body lead">
+					<p>- Các bước để mã hóa thuật toán <b>RSA: </b></p>
+					<ol>
+						<li>Chọn 2 số nguyên tố lớn khác nhau p, q (p # q) thỏa mãn điều kiện.</li>
+						<li>Tính tích của nó. <b>n = q*p</b></li>
+						<li>Tính giá trị hàm Phi Euler của n. <b>λ(n) = BCNN(λ(p), λ(q)) = BCNN(p − 1, q − 1)</b></li>
+						<li>Chọn số nguyên e, sao cho <b>gcd(e, λ(n)) = 1 </b></li>
+						<li>Tính giá trị d thỏa mãn điều kiện, sao cho <b>d ≡ 1/e (mod λ(n)) tức de ≡ 1 (mod λ(n)) </b> Số d được gọi là số nghịch đảo modulo của e (theo modulo mod λ(n)).</li>
+						<li>Khóa công khai bao gồm: n và e, khóa bí mật: n, d</li>
+					</ol>
+					<hr>
+					<p><b>B1: </b> p = 61 </p>
+					<p> q = 53 </p>
+					<p><b>B2: </b> n = p*q = 3233 </p>
+					<p><b>B3: </b> λ(n) = 3120</p>
+					<p><b>B4: </b> e = 17 </p>
+					<p><b>B5: </b>Tính được 
+						e*d modλ(n) = 1, 17*d mod(3120) = 1
+						d = 2753 </p>
+					
+					<p><b>B6: </b> Khóa công khai là cặp (3233, 17). Khóa bí mật là (3233, 2753).</p>
+				 	<p>Hàm mã hóa: <b>encrypt(m) = me mod n = m17 mod 3233</b>, với m là văn bản rõ. </p>
+					<p>Hàm giải mã: <b>decrypt(c) = cd mod n = c2753 mod 3233</b>, với c là văn bản mã.</p>
+					<p>Mã hóa giá trị 123 -> encrypt(123) = 12317 mod 3233 = 855</p>
+					<p>Giải mã giá trị 855 -> decrypt(855) = 8552753 mod 3233 = 123</p>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
+				</div>
+			</div>
+
+			<div class="panel panel-primary" id="cau-18">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 18.	Nêu kiến trúc các mô hình cài đặt FireWall?
+				</div>
+				<div class="panel-body lead">
+					<p>- Cấu trúc FireWall: </p>
+					<ol>
+						<li><b>Kiến trúc Dual-homed Host</b></li>
+						<li><b>Kiến  trúc Screened Host</b></li>
+						<li><b>Kiến trúc Screened Subnet Host</b></li>
+					</ol>
+					<a href="#menu" class="col-md-1 col-md-offset-11 btn btn-primary" role="button">Menu</a>
 				</div>
 			</div>
 		</div>
