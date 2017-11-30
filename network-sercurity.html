@@ -13,6 +13,10 @@
 		.top{
 			margin-top: 20px;
 		}
+
+		.top-10px{
+			margin-top: 10px;
+		}
 	</style>	
 </head>
 	<body>
@@ -51,7 +55,8 @@
 					</table>
 				</div>
 			</div>
-
+			
+			<!-- Question 1 -->
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<i class="glyphicon glyphicon-question-sign"></i>
@@ -59,20 +64,225 @@
 				</div>
 				<div class="panel-body lead">
 					Có 4 hình thức:
-					<b>
-						<ol>
+					
+					<ol>
+						<b>
 							<li>Ngắt quãng</li>
 							<li>Chặn bắt</li>
 							<li>Sửa đổi</li>
 							<li>Giả mạo</li>
-						</ol>
-					</b>
+						</b>
+					</ol>
+					<table class="top-10px table table-hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nội dung</th>
+							</tr>
+						</thead>
 
-					
+						<tbody>
+							<tr>
+								<td>Ngắt quãng</td>
+								<td>
+									<ul>
+										<li>Làm cho không truy cập được tài nguyên tạm thời</li>
+										<li>Tấn công vào tính khả dụng (Availability)</li>
+										<li>VD: Tấn công DDoS làm máy chủ tê liệt</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Chặn bắt</td>
+								<td>
+									<ul>
+										<li>Dữ liệu bị đọc bởi 1 người không có thẩm quyền</li>
+										<li>Tấn công vào tính bảo mật (Confidentiality)</li>
+										<li>VD: Tấn công Man-In-The-Middle (MIMM), người ở giữa bắt các gói tin nghe lén</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Sửa đổi</td>
+								<td>
+									<ul>
+										<li>Dữ liệu bị sửa đổi bởi 1 người không có thẩm quyền</li>
+										<li>Tấn công vào tính toàn vẹn (Integrity)</li>
+										<li>VD: A gửi thư cho B. Tuy nhiên C chặn bắt thư lại, sửa đổi nội dung rồi gửi lại cho B</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Giả mạo</td>
+								<td>
+									<ul>
+										<li>Dữ liệu được gửi giả mạo từ 1 người không có thẩm quyền</li>
+										<li>Tấn công vào tính xác thực nguồn gốc của bản tin (Message Origin Authentication)</li>
+										<li>VD: Tấn công DDoS làm máy chủ tê liệt</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-		</div>
+			<!-- End Question 1 -->
+
+
+			<!-- Question 3 -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 3: Khái niệm mã hóa công khai? Sử dụng mã hóa công khai làm chữ kí số
+				</div>
+				<div class="panel-body lead">
+					<table class="top-10px table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nội dung</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Khái niệm MHCK</td>
+								<td>
+									<ul>
+										<li>là 1 dạng mã hóa</li>
+										<li>không cần trao đổi khóa bí mật</li>
+										<li>sử dụng cặp khóa (1 bí mật + 1 công khai) có quan hệ toán học</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Sử dụng MHCK làm chữ kí số</td>
+								<td>
+									<ul>
+										<li>A gửi cho B bản tin M cần kí</li>
+										<li>A dùng khóa bí mật của A để kí</li>
+										<li>B nhận được bản tin, dùng khóa công khai của A để giải mã</li>
+										<li>Giải mã được => đúng A gửi (Vì chỉ A có khóa bí mật mới mã hóa được bản tin mà dùng khóa công khai của A giải được)</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- End question 3 -->
+
+			<!-- Question 5 -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 5: Khái niệm về các phần mềm độc hại, phân loại.
+				</div>
+				<div class="panel-body lead">
+					<table class="top-10px table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nội dung</th>
+							</tr>
+						</thead>
+	
+						<tbody>
+							<tr>
+								<td>Khái niệm PMĐH</td>
+								<td>
+									<ul>
+										<li>là phần mềm không mong muốn </li>
+										<li>được cài trên hệ thống của người dùng</li>
+										<li>không được sự cho phép của người dùng</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>Phân loại</td>
+								<td>
+									2 loại
+									<ul>
+										<li>Cần chương trình chủ (host program): Trapdoors, Logic Bombs, Trojan Horse, Viruses</li>
+										<li>Độc lập : Bacterial, Worm</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- End question 5 -->
+
+			<!-- Question 7 -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 7: Khái niệm về các phần mềm độc hại, phân loại.
+				</div>
+				<div class="panel-body lead">
+					Giống câu 5
+				</div>
+			</div>
+			<!-- End question 7 -->
+
+			<!-- Question 9 -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 9: Trình bày về Circurt-level Gateway trong firewall
+				</div>
+				<div class="panel-body lead">
+					<table class="top-10px table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nội dung</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Circurt-level Gateway</td>
+								<td>
+									<ul>
+										<li>Còn gọi là gateway mức mạng</li>
+										<li>Hoạt động tại lớp session của mô hình OSI (Open Systems Interconnection Reference Model - Mô hình tham chiếu kết nối các hệ thống mở)</li>
+										<li>Giám sát việc bắt tay (hanshaking) giữa các gói</li>
+										<li>Chi phí thấp</li>
+										<li>Che dấu được thông tin mạng mà nó bảo vệ</li>
+										<li><a href="http://netone.vn/Trangchu/Hotrokythuat/Kienthuccanban/tabid/366/arid/2110/Default.aspx">Tham khảo</a></li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- End question 9 -->
 		
+			<!-- Question 11 -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 3: Trình bày các hình thức tấn công, nêu ví dụ minh họa
+				</div>
+				<div class="panel-body lead">
+					<table class="top-10px table table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nội dung</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- End question 5 -->
 	</div>
 </body>
 </html>
