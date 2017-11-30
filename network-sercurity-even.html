@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>An ninh mạng - ôn tập</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.top{
+			margin-top: 20px;
+		}
+	</style>	
+</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<h3 class="top text-center">An ninh mạng</h3>
+
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">Mục lục</div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Nội dung</th>
+								<th>Nội dung</th>
+								<th>Nội dung</th>
+								<th>Nội dung</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 2: Trình bày các mục tiêu của an ninh mạng? Lấy ví dụ?
+				</div>
+				<div class="panel-body lead">
+					Có 9 mục tiêu:
+					<p>- Mục tiêu chính (3)</p>
+						<ol>
+							<li><b>Confidentiality (Bảo mật).</b> VD: A gửi tin nhắn cho B và không muốn bị người thứ 3 đọc</li>
+							<li><b>Integrity (Toàn vẹn).</b> VD: A gửi tin nhắn cho B và không muốn bị người thứ 3 sửa đổi</li>
+							<li><b>Availability (Tính sãn sàng).</b> VD: Tấn công DDos, lượng truy cập quá lớn vượt qua lượng tải của server -> Máy chủ bị sập</li>
+						</ol>
+
+					<p>- Mục tiêu khác (6)</p>
+						<ol>
+							<li><b>Entity Authentication (Xác thực thực thể).</b> VD: A muốn xác nhận thông điệp được gửi từ B và chắc chắn được gửi từ B.</li>
+							<li><b>Message Origin Authentication (Xác thực nguồn gốc thông điệp).</b>VD: A muốn xác nhận người gửi là B và chắc chắn là B.</li>
+							<li><b>Timeliness (Tính kịp thời).</b> VD: C biết được A hay trao đổi tin nhắn vay tiền với B, vì vậy C lặp lại thông điệp(replay attack) của A gửi lại cho B.</li>
+							<li><b>Non‐repudiation (Chống từ chối).</b> VD: A chắc chắn rằng B không thể phủ nhận đã gửi một thông điệp đến A(Gốc) và A muốn chắc chắn rằng B nhận được thông điệp mà A gửi (Dích).</li>
+							<li><b>Authorisation (Cấp phép).</b> VD: Passwork là một kiểu cấp phép, chỉ password này mới truy cập được tài khoản này.</li>
+							<li><b>Access Control (Quyền truy cập).</b> VD: Một trang quản trị bán hàng, nhân viên A chỉ được phân quyền trên trang bán hàng là thêm, nhân viên B vừa thêm, xóa và sửa hàng.</li>
+						</ol>
+
+				</div>
+			</div>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<i class="glyphicon glyphicon-question-sign"></i>
+				Câu 4: Trình bày khái niệm firewall, cơ chế kiểm soát, ưu điểm và hạn chế?
+				</div>
+				<div class="panel-body lead">
+					<p>- Khái niệm FireWall: </p>
+						<ol>
+							<li><b>Là khả năng ngăn chặn quyền truy cập tới mạng LAN or cổng LAN. FireWall liên quan đến mục đích an ninh kiểm soát quyền truy cập.</b></li>
+						</ol>
+
+					<p>- Cơ chế kiểm soát</p>
+						<ol>
+							<li><b>Tất cả traffic đến hoặc đi từ mạng phải thông qua FireWall</b></li>
+							<li><b>Traffic được cấp phép, được định danh đầy đủ bởi chính sách bảo mật mới được phép đi qua FireWall</b></li>
+							<li><b>Chính FireWall phải có khả năng tránh được sự xâm nhập bất hợp pháp và được thiết kế là một hệ thông đáng tin cậy</b></li>
+						</ol>
+					<p>- Ưu điểm FireWall:</p>
+					<ol>
+						<li><b>Cung cấp một điểm truy cập duy nhất để kiểm soát tất cả các truy cập tới internet.</b></li>
+						<li><b>Firewall cung cấp 1 vị trí để giám sát các sự kiện liên quan đến bảo mật.</b></li>
+						<li><b>Ánh xạ địa chỉ mạng cục bộ thành địa chỉ trên Internet.(NAT)</b></li>
+						<li><b>Firewall có thể phục vụ như một hệ nền cho IPSet.</b></li>
+					</ol>
+					<p>- Hạn chế: </p>
+					<ol>
+						<li><b>Firewall ko thể bảo vệ được để chống lại các cuộc tấn công ko đi qua nó.</b></li>
+						<li><b>Firewall ko thể chống lại các nguy cơ tấn công từ chính bên trong mạng nội bộ mà nó bảo vệ.</b></li>
+						<li><b>Firewall ko thể bảo vệ chống lại việc chuyển các chương trình hoặc file có virus đi qua nó.</b></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
